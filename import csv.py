@@ -1,7 +1,12 @@
 import csv
 from datetime import datetime, time
+from pathlib import Path
 
-RUTA_ARCHIVO_HORARIO = "horarios.csv"
+# ...existing code...
+-RUTA_ARCHIVO_HORARIO = "c:\Users\alell\Downloads\tablas_todas.csv"
++RUTA_ARCHIVO_HORARIO = Path(r"C:\Users\alell\Downloads\tablas_todas.csv")
+# ...existing code...
+
 
 # --------------------------
 # Carga y modelo de datos
@@ -214,3 +219,4 @@ def menu_principal():
 
 if __name__ == "__main__":
     menu_principal()
+
